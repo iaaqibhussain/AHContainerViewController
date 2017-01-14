@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHContainerViewController_Example' do
+  pod 'AHContainerViewController', :path => '../'
+
+  target 'AHContainerViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
