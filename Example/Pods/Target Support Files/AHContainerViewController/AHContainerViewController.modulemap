@@ -1,0 +1,6 @@
+framework module AHContainerViewController {
+  umbrella header "AHContainerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

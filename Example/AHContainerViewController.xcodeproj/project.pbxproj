@@ -21,6 +21,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7B134B881E34F5DF0081886D /* AHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B134B871E34F5DF0081886D /* AHFirstViewController.m */; };
+		7B134B8B1E34F6010081886D /* AHSecondViewConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B134B8A1E34F6010081886D /* AHSecondViewConroller.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		ABC4CE5CA03F3E34F5503F6C /* Pods_AHContainerViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931D976787C49A89395E40A1 /* Pods_AHContainerViewController_Example.framework */; };
 /* End PBXBuildFile section */
@@ -59,12 +61,16 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7631946EA3F0B8D1633CD56C /* Pods_AHContainerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHContainerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A89B1D60DD6A64A5E2D1E01 /* Pods-AHContainerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHContainerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHContainerViewController_Tests/Pods-AHContainerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7B134B861E34F5DF0081886D /* AHFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHFirstViewController.h; sourceTree = "<group>"; };
+		7B134B871E34F5DF0081886D /* AHFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHFirstViewController.m; sourceTree = "<group>"; };
+		7B134B891E34F6010081886D /* AHSecondViewConroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHSecondViewConroller.h; sourceTree = "<group>"; };
+		7B134B8A1E34F6010081886D /* AHSecondViewConroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHSecondViewConroller.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		931D976787C49A89395E40A1 /* Pods_AHContainerViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHContainerViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2CB61602626A2E8E681ED04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C359BA3C40F9BEC254FC8EEE /* AHContainerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHContainerViewController.podspec; path = ../AHContainerViewController.podspec; sourceTree = "<group>"; };
+		B2CB61602626A2E8E681ED04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C359BA3C40F9BEC254FC8EEE /* AHContainerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHContainerViewController.podspec; path = ../AHContainerViewController.podspec; sourceTree = "<group>"; };
 		D30C047AFADC8C45EB9A2F89 /* Pods-AHContainerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHContainerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHContainerViewController_Tests/Pods-AHContainerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DBB4F2CA7E157B6DA23A6BCC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DBB4F2CA7E157B6DA23A6BCC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +136,10 @@
 		6003F593195388D20070C39A /* Example for AHContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7B134B851E34F5920081886D /* View Controllers */,
 				6003F59C195388D20070C39A /* AHAppDelegate.h */,
 				6003F59D195388D20070C39A /* AHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* AHViewController.h */,
-				6003F5A6195388D20070C39A /* AHViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -180,6 +185,19 @@
 				B2CB61602626A2E8E681ED04 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7B134B851E34F5920081886D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B134B891E34F6010081886D /* AHSecondViewConroller.h */,
+				7B134B8A1E34F6010081886D /* AHSecondViewConroller.m */,
+				7B134B861E34F5DF0081886D /* AHFirstViewController.h */,
+				7B134B871E34F5DF0081886D /* AHFirstViewController.m */,
+				6003F5A5195388D20070C39A /* AHViewController.h */,
+				6003F5A6195388D20070C39A /* AHViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		F39FBFA19CF37C2AC97DFEC9 /* Pods */ = {
@@ -244,9 +262,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AH;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Aaqib Hussain";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = EBKY3S8P5D;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -390,8 +411,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B134B8B1E34F6010081886D /* AHSecondViewConroller.m in Sources */,
 				6003F59E195388D20070C39A /* AHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AHViewController.m in Sources */,
+				7B134B881E34F5DF0081886D /* AHFirstViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,14 +470,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -487,13 +515,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -513,12 +546,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EBKY3S8P5D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AHContainerViewController/AHContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "AHContainerViewController/AHContainerViewController-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -529,12 +564,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EBKY3S8P5D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AHContainerViewController/AHContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "AHContainerViewController/AHContainerViewController-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

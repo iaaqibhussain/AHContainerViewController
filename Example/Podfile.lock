@@ -1,0 +1,16 @@
+PODS:
+  - AHContainerViewController (0.1.0)
+
+DEPENDENCIES:
+  - AHContainerViewController (from `../`)
+
+EXTERNAL SOURCES:
+  AHContainerViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AHContainerViewController: 6ed328b13420ae9bd130d5210193dbb9bf6a145e
+
+PODFILE CHECKSUM: f8458864853d255c35e183213245885433f57da2
+
+COCOAPODS: 1.1.1

@@ -9,5 +9,6 @@
 @import UIKit;
 
 @interface AHViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *passTextToContainer;
 
 @end
