@@ -25,32 +25,38 @@ After installing the pod in your project or adding both of the classes i.e. AHCo
 
 ![alt tag](https://github.com/iaaqib/AHContainerViewController/blob/master/Screenshots/Screen%20Shot%202017-01-29%20at%207.26.35%20pm.png)
 
+</br>
 
 Now select the segue attached to the Container View Controller and add an identifier.
 
 ![alt tag](https://github.com/iaaqib/AHContainerViewController/blob/master/Screenshots/Screen%20Shot%202017-01-29%20at%207.27.20%20pm.png)
 
+</br>
 
 Attach ViewControllers to the Container View Controller and set the segue's custom class to AHEmptySegue.
 
 ![alt tag](https://github.com/iaaqib/AHContainerViewController/blob/master/Screenshots/Screen%20Shot%202017-01-29%20at%207.27.59%20pm.png)
 
-
+</br>
 
 Finally give the identifier of the ViewController you want to show when the Container View first loads.
 
 
 ![alt tag](https://github.com/iaaqib/AHContainerViewController/blob/master/Screenshots/Screen%20Shot%202017-01-29%20at%207.28.27%20pm.png)
 
-
+</br>
 
 ## Usage 
 
 Method <code>segueIdentifierReceivedFromParent</code> of class AHContainerViewController can be used to manipulate between the attached View Controllers by passing in the respective identifiers.
 
 Property <code>currentViewController</code> can be used anytime to know which View Controller is currently on the front and can further be used to get/pass data from/to attached View Controllers.  
+</br>
+## Using with Swift
 
-
+In your <code>Bridging-Header.h</code> file add:
+<pre>#import <&zwj;AHContainerViewController/AHContainerViewController.h&zwj;> </pre>
+Don't forget to <code>import AHContainerViewController</code> in the class where using it.
 
 ## Author
 
